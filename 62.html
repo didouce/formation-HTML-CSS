@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <head>
+       <title>CSS avancé</title>
+       <meta charset="utf-8">
+       <style>
+         body{
+             font-family: 'Open Sans', sans-serif;
+         }
+       </style>
+   </head>
+   <body>
+       <h1>CSS avancé</h1>
+       <form method="post" action="traitement.php">
+           <label for="prenom">Entrez votre prenom</label>
+           <input type="text" name="prenom" name="prenom" autocomplete="on"><br>
+
+           <label for="nom">Entrez votre nom</label>
+           <input type="text" name="nom" name="nom" autofocus="on" placeholder="ex:pierre">
+
+           
+           <label for="nombre">choisir un chiffre entre 1 et 10</label>
+           <input type="number" name="nombre" name="nombre" min="1" max="10"> <br>
+        
+           <input type="submit" value="envoyer">
+
+       </form>
+
+   </body>   
+</html>

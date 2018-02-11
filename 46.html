@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Les tableaux</title>
+        <meta charset="utf-8">
+        <style>
+          body{
+              font-family: 'Open Sans', sans-serif;
+          }
+          td, th{
+              border: 1px solid black;
+              padding: 10px;
+          }
+          table{
+              border-collapse: collapse;
+          }
+          .paire{
+              background-color:#f39c12;
+          }
+          .impaire{
+              background-color: #3498db;
+          }
+          tr:nth-child(even){
+              background-color: blue;
+          }
+          tr:nth-child(odd){
+              background-color: orange;
+          }
+          th{
+              background-color:aqua;
+              font-weight: normal; 
+          }
+         </style>
+    </head>
+    <body>
+       <h1>Les tableaux</h1>
+       <table>
+           <tr>
+               <th>Nom</th>
+               <th>Prenom</th>
+               <th>Age</th>
+           </tr>
+           <tr class="paire">
+               <td>Bayoud</td>
+               <td>Lynda</td>
+               <td>25</td>
+           </tr>
+           <tr class="impaire">
+               <td>Haddad</td>
+               <td>Mayas</td>
+               <td>26</td>
+           </tr>
+       </table>
+    </body>    
+</html>

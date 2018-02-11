@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+   <head>
+       <title>responsive design</title>
+       <meta charset="utf-8">
+       <style>
+              body{
+                  margin: 0px;
+                  padding: 0px;
+              }
+              #div1, #div2, #div3{
+                  display: inline-block;
+                  width: 30%;
+                  height: 100px;
+                  border: 3px solid #AAA;
+                  margin: 1%
+              }
+              #div1{
+                  background-color: orange;
+              }
+              #div2{
+                  background-color: blue;
+              }
+              #div3{
+                  background-color: green;
+              }
+              #footer{
+                  width: 100%;
+                  height: 200px;
+                  margin-top: 20px;
+                  border-top: 1px solid black;
+                  text-align: center;
+                  background-color: #ccc;
+              }
+              @media screen and (max-width: 780px){
+                  #div1, #div2, #div3{
+                      width: 100%;
+                      border-right: none;
+                      border-left: none;
+                      margin-right: 0px;
+                      margin-left: 0px;
+                  }
+                  #footer{
+                      display: none;
+                  }
+              }
+       </style>
+   </head>
+   <body>
+       <h1>responsive design</h1>
+       <div id="div1">
+           <p>paragraphe du div1</p>
+       </div>
+       <div id="div2">
+            <p>paragraphe du div2</p>
+        </div>
+        <div id="div3">
+                <p>paragraphe du div3</p>
+            </div>
+        <div id="footer">
+            <P>Je suis un pied de page</P>
+        </div>
+   </body>   
+</html>

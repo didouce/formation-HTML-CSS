@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Gestion du fond en css</title>
+        <meta charset="utf-8">
+        <style>
+          body{
+              font-family: 'Open Sans', sans-serif;
+          }
+          .div1{
+              float: left;
+              width: 400px;
+              height:400px;
+              background: -webkit-linear-gradient(top left, red 10%, orange 30%,blue);
+              background: -o-linear-gradient(bottom right, red 10%,orange 30%, blue);
+              background: -moz-linear-gradient(bottom right, red 10%,orange 30%, blue);
+              background: linear-gradient(to bottom right, red 10%, orange 30%, blue);
+          }
+          .div2{
+              float: right;
+              width: 400px;
+              height:400px;
+              background:  -webkit-radial-gradient(circle,blue,pink,palevioletred);
+              background: -o-radial-gradient(circle, blue,pink,palevioletred);
+              background: -moz-radial-gradient(circle,blue,pink,palevioletred);
+              background: radial-gradient()(circle, blue,pink,palevioletred);
+          }
+         </style>
+    </head>
+    <body>
+       <h1>Gestion de fond en css</h1>
+       <div class="div1">
+           <p class="p1">Un premier paragraphe avec beaucoup de contenu</p>
+           <p class="p2">Un deuxieme paragraphe</p> 
+       </div> 
+       <div class="div2" >
+       </div>  
+    </body>    
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+   <head>
+       <title>CSS avancé</title>
+       <meta charset="utf-8">
+       <style>
+         body{
+            font-size: 16px;
+            font-family: Verdana, sans-serif;
+            color: #333;
+         }
+         #section1{
+             background-color: #adf5f5;
+             padding: 10px;
+             margin: 20 px 0px;
+         }
+         #section2{
+             background-color: #9fcbf7;
+             padding: 10px;
+             margin: 20px 0px;
+         }
+         #section1:hover, #section2:hover{
+             box-shadow: 0px 0px 5px #444;
+         }
+         legend{
+             font-weight: bold;
+             text-transform: uppercase;
+             font-size: 18px;
+             color: #444;
+         }
+         #section1 input{
+             width: 300px;
+             height: 20px;
+         }
+         #section2 input{
+             width: 20px;
+             height: 20px;
+         }
+         #section1 label{
+             display: inline-block;
+             width: 200px;
+             padding: 10px 0px 15px 40px;
+         }
+         #section2 label{
+             display: inline-block;
+             width: 100px;
+             padding: 5px 0px 15px 10px;
+         }
+         input[type="submit"]{
+             float: right;
+             padding: 10px;
+             font-size: 14px;
+             color: #fff;
+             background-color: #badf18;
+             font-weight: bold;
+             text-transform: uppercase; 
+             border-radius: 5px;
+         }
+         input[type="submit"]:hover{
+             box-shadow: 0px 0px 4px #555;
+             background-color: #e4917e;
+         }
+       </style>
+   </head>
+   <body>
+       <h1>CSS avancé</h1>
+       <form method="post" action="traitement.php">
+           <fieldset id="section1">
+            <legend>Informations personnelles :</legend>
+            <label for="prenom">Entrez votre prenom :</label>
+            <input type="text" name="prenom" id="prenom"><br>
+            <label for="nom">Entrez votre nom :</label>
+            <input type="text" name="nom" id="nom"><br>
+            <label for="prenom">Entrez votre pseudonyme :</label>
+            <input type="text" name="pseudo" id="pseudo"><br>
+           </fieldset>
+
+
+           <fieldset id="section2">
+               <legend>Informations suplémentaires :</legend>
+           Quels sont vos loisirs?<br>
+            <input type="checkbox" name="hobbies" value="informatique" id="inf">
+            <label for="inf">Informatique</label>
+            <input type="checkbox" name="hobbies" value="sport" id="sport">
+            <label for="sport">sport</label>
+            <input type="checkbox" name="voyage" value="informatique" id="voyage">
+            <label for="voyage">voyage</label>
+            <input type="checkbox" name="hobbies" value="musique" id="musique">
+            <label for="musique">musique</label>
+           </fieldset>
+
+           <input type="submit" value="envoyer">
+
+       </form>
+
+   </body>   
+</html>

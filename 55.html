@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS avancé</title>
+        <meta charset="utf-8">
+        <style>
+          body{
+              font-family: 'Open Sans', sans-serif;
+          }
+          p::first-letter{
+              font-size: 30px;
+              color: #A92;
+          }
+          p::-moz-selection{
+              background-color: olivedrab;
+          }
+          p::selection{
+              background-color: olivedrab;
+          }
+          div{
+              border: 1px solid black;
+          }
+          div::before{
+              content: "du texte ajouté au début";
+          }
+          div::after{
+              content: "du texte ajouté à la fin";
+          }
+         </style>
+    </head>
+    <body>
+        <h1>CSS avancé</h1>
+        <div>
+            <p>Un premier paragraphe</p>
+            <p>Ceci est le deuxieme paragraphe</p>
+            <p>Et voila un troisieme paragraphe</p>
+        </div>  
+        <p>Un paragraphe hors div</p>
+    </body>    
+</html>
